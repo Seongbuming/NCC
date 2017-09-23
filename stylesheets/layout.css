@@ -176,7 +176,7 @@
         display: none;
     }
     .header .header-bottom .container {
-        width: unset;
+        width: auto;
     }
     .header .header-bottom .whole-menu,
     .header .header-bottom .button-search {
@@ -196,25 +196,32 @@
     margin: 0 auto;
     margin-top: 45px;
 }
+.contents .area {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+}
+.contents .area h2 {
+    margin: 30px 0 20px 0;
+}
 .contents .area-search {
     float: right;
     width: 538px; /* 598 - 30*2 */
     height: 138px;
     padding: 0 30px;
-    border: 1px solid #e7e7e7;
 }
 .contents .area-search h2 {
-    margin: 30px 0 20px 0;
     color: #333;
 }
 .contents .area-search .input-search {
     float: left;
     width: 326px; /* 336 - 10 */
     height: 30px;
+    line-height: 30px;
     padding: 0;
     padding-left: 10px;
     color: #888;
     border: 2px solid #107de4;
+    background-color: white;
 }
 .contents .area-search .label-search {
     float: left;
@@ -247,6 +254,25 @@
         margin: 0 10px;
         margin-top: 20px;
     }
+    .contents .area-search {
+        padding: 15px;
+    }
+    .contents .area-search .input-search {
+        width: calc(80% - 10px - 4px - 8px);
+    }
+    .contents .area-search .label-search {
+        width: calc(80% - 10px - 4px - 8px);
+        margin: 2px 0 2px calc(-80% + 10px + 4px + 8px - 2px);
+    }
+    .contents .area-search .button-search {
+        width: 20%;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+    .contents .area-search .view-all {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
@@ -254,10 +280,36 @@
         margin: 0 24px;
         margin-top: 30px;
     }
+    .contents .area-search {
+        padding: 20px;
+    }
+    .contents .area-search .input-search {
+        width: calc(70% - 10px - 4px - 10px);
+    }
+    .contents .area-search .label-search {
+        width: calc(70% - 10px - 4px - 10px);
+        margin: 2px 0 2px calc(-70% + 10px + 4px + 10px - 2px);
+    }
+    .contents .area-search .button-search {
+        width: 10%;
+    }
+    .contents .area-search .view-all {
+        width: 20%;
+        margin-left: 10px;
+    }
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
     .contents {
-        width: unset;
+        width: auto;
+    }
+    .contents .area-search {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+    .contents .area-search h2 {
+        margin: 0;
+        margin-bottom: 15px;
     }
 }

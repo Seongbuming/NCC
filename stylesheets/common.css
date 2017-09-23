@@ -3,6 +3,17 @@
 body {
     font-family: 'Malgun Gothic', Dotum, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    background-color: #f8f8f8;
+}
+/* Mobile */
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+* {
+    overflow: hidden;
 }
 
 h2 {

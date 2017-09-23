@@ -51,7 +51,7 @@
     </div>
 
     <div class="contents">
-        <div class="area-search">
+        <div class="area area-search">
             <h2>내가 알고 싶은 암 찾아보기</h2>
             <input class="input-search" id="input-search-contents" type="text" title="검색 입력" />
             <label class="label-search" for="input-search-contents">검색어를 입력해주세요</label>
