@@ -24,8 +24,8 @@
                     <button class="reduce-font-size" title="글자 축소"></button>
                 </div>
                 <div class="right">
-                    <input class="input-search" id="input-search" type="text" title="검색 입력" />
-                    <label class="label-search" for="input-search">검색어를 입력해주세요</label>
+                    <input class="input-search" id="input-search-header" type="text" title="검색 입력" />
+                    <label class="label-search" for="input-search-header">검색어를 입력해주세요</label>
                     <button class="button-search" title="검색"></button>
                     <button class="english">English</button>
                 </div>
@@ -51,6 +51,13 @@
     </div>
 
     <div class="contents">
+        <div class="area-search">
+            <h2>내가 알고 싶은 암 찾아보기</h2>
+            <input class="input-search" id="input-search-contents" type="text" title="검색 입력" />
+            <label class="label-search" for="input-search-contents">검색어를 입력해주세요</label>
+            <button class="button-search">검색</button>
+            <button class="view-all">전체암보기</button>
+        </div>
     </div>
 
     <div class="footer">

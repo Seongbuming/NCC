@@ -4,8 +4,17 @@ body {
     font-family: 'Malgun Gothic', Dotum, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 button {
     border: none;
     padding: 0;
     color: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }

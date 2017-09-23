@@ -1,13 +1,13 @@
 $(document).ready(function() {
-    var $input_search = $(".header .header-top .input-search");
-    var $label_search = $input_search.next(".label-search");
-    $input_search.on("focusin", function() {
-        $label_search.css("display", "none");
+    $(".input-search").on("focusin", function() {
+        var $label = $(this).next(".label-search");
+        $label.css("display", "none");
     }).on("focusout", function() {
+        var $label = $(this).next(".label-search");
         if (this.value.length == 0) {
-            $label_search.css("display", "block");
+            $label.css("display", "block");
         } else {
-            $label_search.css("display", "none");
+            $label.css("display", "none");
         }
     });
 });
