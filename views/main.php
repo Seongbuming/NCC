@@ -2,17 +2,19 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>국가암정보센터</title>
 
-    <link rel="stylesheet" href="stylesheets/normalize.css" />
-    <link rel="stylesheet" href="stylesheets/common.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/layout.css" />
 </head>
 
 <body>
-    <header>
+    <div class="header">
         <div class="header-top">
             <div class="container">
                 <div class="left">
@@ -31,17 +33,30 @@
         </div>
         <div class="header-bottom">
             <div class="container">
+                <button class="whole-menu" title="전체 메뉴"></button>
+                <button class="button-search" title="검색"></button>
+                <div class="logo">
+                    <a href="."><img src="images/logo.png" alt="국가암정보센터 로고" /></a>
+                </div>
+                <ul class="menu">
+                    <li>암예방과 검진</li>
+                    <li>내가 알고 싶은 암</li>
+                    <li>암환자 생활백서</li>
+                    <li>통계로 보는 암</li>
+                    <li>암정보 나눔터</li>
+                    <li>국가지원프로그램</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </div>
 
-    <section id="contents">
-    </section>
+    <div class="contents">
+    </div>
 
-    <footer>
-    </footer>
+    <div class="footer">
+    </div>
     
-    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/jquery-1.12.4.min.js"></script>
     <script src="javascripts/main.js"></script>
 </body>
 </html>
