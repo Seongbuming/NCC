@@ -1,9 +1,12 @@
 @charset "utf-8";
 
-body {
+html {
     font-family: 'Malgun Gothic', Dotum, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    line-height: normal;
+    /*word-break: keep-all;*/
     background-color: #f8f8f8;
+    overflow: auto;
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
@@ -28,4 +31,16 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
 }
