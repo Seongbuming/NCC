@@ -5,12 +5,13 @@
     margin: 0 auto;
     margin-top: 45px;
 }
-.contents .area {
+.contents .area .inside {
+    height: 100%;
     border: 1px solid #e7e7e7;
     background-color: white;
     background-repeat: no-repeat;
 }
-.contents .area > * {
+.contents .area .inside > * {
     line-height: normal;
 }
 .contents .area h2 {
@@ -54,11 +55,12 @@
 
 .contents .area-search {
     float: right;
-    width: 538px; /* 598 - 30*2 */
+    width: 50%;
+}
+.contents .area-search .inside {
     height: 138px;
-    line-height: 138px;
-    padding: 0 30px;
     margin-left: -1px;
+    padding: 0 30px;
 }
 .contents .area-search h2 {
     color: #333;
@@ -103,8 +105,10 @@
 /* Mobile */
 @media screen and (max-width: 720px) {
     .contents .area-search {
-        padding: 15px;
         margin-bottom: 20px;
+    }
+    .contents .area-search .inside {
+        padding: 15px;
     }
     .contents .area-search .input-search {
         width: calc(80% - 10px - 4px - 8px);
@@ -125,7 +129,7 @@
 }
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
-    .contents .area-search {
+    .contents .area-search .inside {
         padding: 20px;
     }
     .contents .area-search .input-search {
@@ -148,6 +152,8 @@
     .contents .area-search {
         float: none;
         width: auto;
+    }
+    .contents .area-search .inside {
         height: auto;
         margin-left: 0;
     }
@@ -159,20 +165,21 @@
 
 .contents .container-left {
     float: left;
-    width: 602px;
-    margin-right: -1px;
+    width: 50%;
 }
 .contents .container-left .area {
     float: left;
-    width: 249px;
+    width: 50%;
+}
+.contents .container-left .area .inside {
     height: 138px;
     line-height: 138px;
     padding: 0 20px 0 30px;
 }
-.contents .container-left .area:nth-child(n+3) {
+.contents .container-left .area:nth-child(n+3) .inside {
     margin-top: -1px;
 }
-.contents .container-left .area:nth-child(2n) {
+.contents .container-left .area:nth-child(2n) .inside {
     margin-left: -1px;
 }
 .contents .container-left .area h2 {
@@ -191,14 +198,10 @@
         margin-bottom: 20px;
         text-align: center;
     }
-    .contents .container-left .area {
-        width: calc(50% - 30px - 2px);
+    .contents .container-left .area .inside {
         height: 100px;
         line-height: 100px;
         padding: 0 15px;
-    }
-    .contents .container-left .area:nth-child(2n) {
-        padding-right: 16px; /* 15 + 1 */
     }
     .contents .container-left .area h2 {
         display: inline-block;
@@ -215,13 +218,11 @@
     .contents .container-left {
         margin-top: -1px;
     }
-    .contents .container-left .area {
-        width: calc(50% - 40px - 2px);
+    .contents .container-left .area .inside {
         height: 103px;
         line-height: 103px;
-        padding: 0 20px;
     }
-    .contents .container-left .area:nth-child(2n) {
+    .contents .container-left .area:nth-child(2n) .inside {
         padding-right: 21px; /* 20 + 1 */
     }
     .contents .container-left .area h2 {
@@ -234,8 +235,8 @@
         float: none;
         width: auto;
     }
-    .contents .container-left .area {
-        width: calc(50% - 50px - 2);
+    .contents .container-left .area .inside {
+        padding: 0 20px;
     }
     .contents .container-left {
         width: 100%;
@@ -245,12 +246,14 @@
 
 .contents .container-right {
     float: right;
-    width: 600px;
-    margin-left: -1px;
+    width: 50%;
 }
 .contents .container-right .area {
     float: left;
+}
+.contents .container-right .area .inside { 
     margin-top: -1px;
+    margin-left: -1px;
 }
 .contents .container-right .area h2 {
     font-size: 1.3em;
@@ -258,7 +261,7 @@
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
-    .contents .container-right .area {
+    .contents .container-right .area .inside {
         padding: 0 15px;
     }
     .contents .container-right .area h2 {
@@ -270,7 +273,7 @@
 }
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
-    .contents .container-right .area {
+    .contents .container-right .area .inside {
         padding: 0 20px;
     }
     .contents .container-right .area h2 {
@@ -279,13 +282,16 @@
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
-    .contents .container-right .area {
-        float: none;
-        width: auto;
-    }
     .contents .container-right {
         float: none;
         width: 100%;
+    }
+    .contents .container-right .area {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+    .contents .container-right .area .inside {
         margin-left: 0;
     }
 }
@@ -295,12 +301,14 @@
     width: 387px; /* 385 + 2px */
 }
 .contents .call .area-call {
-    width: 325px; /* 385 - 30*2 */
+    width: 100%;
+}
+.contents .call .area-call .inside {
     height: 211px;
     padding: 0 30px;
     text-align: center;
 }
-.contents .call .area-call > * {
+.contents .call .area-call .inside > * {
     text-align: left;
 }
 .contents .call .area-call .call-detail {
@@ -319,7 +327,9 @@
     margin: 0;
 }
 .contents .call .area-call-links {
-    width: 385px;
+    width: 100%;
+}
+.contents .call .area-call-links .inside {
     height: 65px;
     margin-top: -1px;
     padding: 0;
@@ -345,14 +355,17 @@
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
-    .contents .call .area {
-        padding: 0 15px;
-    }
     .contents .call {
         float: none;
         width: auto;
     }
-    .contents .call .area-call-links {
+    .contents .call .area .inside {
+        padding: 0 15px;
+    }
+    .contents .call .area-call .inside {
+        margin-top: 0;
+    }
+    .contents .call .area-call-links .inside {
         height: 48px;
     }
     .contents .call .area-call-links .links {
@@ -366,14 +379,14 @@
 }
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
-    .contents .call .area {
+    .contents .call .area .inside {
         padding: 0 20px;
     }
     .contents .call {
         float: left;
         width: 50%;
     }
-    .contents .call .area-call-links {
+    .contents .call .area-call-links .inside {
         height: 60px;
     }
     .contents .call .area-call-links .links {
@@ -403,7 +416,9 @@
 }
 
 .contents .area-subscribe {
-    width: 172px; /* 212 - 20*2 */
+    width: 213px;
+}
+.contents .area-subscribe .inside {
     height: 211px;
     padding: 0 20px;
     margin-left: -1px;
@@ -437,18 +452,20 @@
 }
 
 .contents .area-sns {
-    width: 212px;
+    width: 213px;
+}
+.contents .area-sns .inside {
     height: 65px;
     margin-left: -1px;
 }
-.contents .area-sns > a {
+.contents .area-sns .inside a {
     float: left;
     width: 20%;
     height: 65px;
     line-height: 65px;
     text-align: center;
 }
-.contents .area-sns > a > img {
+.contents .area-sns .inside a img {
     width: 25px;
     vertical-align: middle;
 }
@@ -466,19 +483,25 @@
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
     .contents .area-sns {
-        float: left !important;
-        width: calc(50% - 40px - 2px) !important;
-        height: 60px;
-        padding-right: 21px !important;
+        float: right !important;
+        width: 50% !important;
     }
-    .contents .area-sns > a {
+    .contents .area-sns .inside {
+        height: 60px;
+        margin-left: -1px !important;
+    }
+    .contents .area-sns .inside a {
         height: 60px;
         line-height: 60px;
     }
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
-    .contents .area-sns > a > img {
+    .contents .area-sns .inside a img {
         width: auto;
     }
+}
+
+.contents .area-notice {
+
 }
