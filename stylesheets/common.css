@@ -45,6 +45,34 @@ a {
     float: right;
 }
 
+.clear {
+    clear: both;
+}
+
+.show-for-mobile,
+.show-for-tablet {
+    display: none;
+}
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .show-for-mobile {
+        display: block;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    .show-for-tablet {
+        display: block;
+    }
+}
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+    .show-for-pc {
+        display: none;
+    }
+}
+
+
 ul.menu {
     display: inline-block;
     padding: 0;
@@ -57,4 +85,15 @@ ul.menu li {
 }
 ul.menu li:hover {
     color: #107de4;
+}
+
+.more {
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    background-image: url("../images/icons/more_off.png");
+    background-color: transparent;
+}
+.more:hover {
+    background-image: url("../images/icons/more_on.png");
 }

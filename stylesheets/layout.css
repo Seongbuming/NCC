@@ -100,6 +100,10 @@
     width: 145px;
     margin-right: 50px;
 }
+.header .header-bottom .logo h1 {
+    margin: 0;
+    font-size: 1em;
+}
 .header .header-bottom .logo img {
     width: 100%;
     vertical-align: middle;

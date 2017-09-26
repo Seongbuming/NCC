@@ -37,7 +37,7 @@
                 <button class="whole-menu" title="전체 메뉴"></button>
                 <button class="button-search" title="검색"></button>
                 <div class="logo">
-                    <a href="."><img src="images/logo.png" alt="국가암정보센터 로고" /></a>
+                    <a href="."><h1><img src="images/logo.png" alt="국가암정보센터" /></h1></a>
                 </div>
                 <ul class="menu">
                     <li>암예방과 검진</li>
@@ -69,8 +69,8 @@
                     <p>암예방을 위한 인체 발암요인정보를 알아볼 수 있습니다.</p>
                 </div>
             </div>
-            <div class="area area-custom" style="background-image: url('images/hospicecare.png'); background-position: 90% 30%;">
-                <div class="inside">
+            <div class="area area-custom">
+                <div class="inside" style="background-image: url('images/hospicecare.png'); background-position: 90% 30%;">
                     <div class="center">
                         <p>아름다운 만남 행복한 동행</p>
                         <h2 style="font-size: 1.7em;"><a href=".">호스피스완화의료</a></h2>
@@ -138,30 +138,109 @@
                 </div>
             </div>
 
+            <div class="area area-apply show-for-tablet">
+                <div class="inside">
+                    <a class="more" href=".">더보기</a>
+                    <h2>신청하기</h2>
+                    <div class="links">
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/note.png" alt="아이콘" />
+                            <p>교육자료 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/monitor.png" alt="아이콘" />
+                            <p>정보사용 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/graph.png" alt="아이콘" />
+                            <p>통계자료 신청</p>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="area area-sns">
                 <div class="inside">
-                    <a class="facebook" href="."><img src="images/icons/facebook_off.png" alt="페이스북" /></a>
-                    <a class="twitter" href="."><img src="images/icons/twitter_off.png" alt="트위터" /></a>
-                    <a class="blog" href="."><img src="images/icons/blog_off.png" alt="블로그" /></a>
-                    <a class="post" href="."><img src="images/icons/post_off.png" alt="포스트" /></a>
-                    <a class="youtube" href="."><img src="images/icons/youtube_off.png" alt="유튜브" /></a>
+                    <a class="facebook" href=".">페이스북</a>
+                    <a class="twitter" href=".">트위터</a>
+                    <a class="blog" href=".">블로그</a>
+                    <a class="post" href=".">포스트</a>
+                    <a class="youtube" href=".">유튜브</a>
                 </div>
             </div>
         </div>
 
-        <div class="area area-notice">
-            <div class="inside">
-                <h2>공지사항</h2>
-            </div>
-        </div>
+        <div class="clear"></div>
 
-        <div class="area area-apply">
-            <div class="inside">
+        <div class="container-bottom">
+            <div class="area area-apply show-for-mobile">
+                <div class="inside">
+                    <a class="more" href=".">더보기</a>
+                    <h2>신청하기</h2>
+                    <div class="links">
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/note.png" alt="아이콘" />
+                            <p>교육자료 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/monitor.png" alt="아이콘" />
+                            <p>정보사용 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/graph.png" alt="아이콘" />
+                            <p>통계자료 신청</p>
+                        </a></div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="area area-banner">
-            <div class="inside">
+            <div class="area area-notice">
+                <div class="inside">
+                    <a class="more" href=".">더보기</a>
+                    <h2>공지사항</h2>
+                    <ul class="notice">
+                        <li><a href=".">
+                            <p class="title">홈페이지 개선제안 페이스북 이벤트</p>
+                            <p class="date">2017.08.18</p>
+                        </a></li>
+                        <li><a href=".">
+                            <p class="title">[당첨자공지] 홈페이지 출석 이벤트</p>
+                            <p class="date">2017.08.18</p>
+                        </a></li>
+                        <li><a href=".">
+                            <p class="title">홈페이지 출석 이벤트 (6/26 ~ 7/26)</p>
+                            <p class="date">2017.08.18</p>
+                        </a></li>
+                        <li><a href=".">
+                            <p class="title">2017년 국립암센터 금연대상</p>
+                            <p class="date">2017.08.18</p>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="area area-apply show-for-pc">
+                <div class="inside">
+                    <a class="more" href=".">더보기</a>
+                    <h2>신청하기</h2>
+                    <div class="links">
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/note.png" alt="아이콘" />
+                            <p>교육자료 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/monitor.png" alt="아이콘" />
+                            <p>정보사용 신청</p>
+                        </a></div>
+                        <div class="wrapper"><a href=".">
+                            <img src="images/icons/graph.png" alt="아이콘" />
+                            <p>통계자료 신청</p>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="area area-banner">
+                <div class="inside">
+                    <a href="."><img src="images/camp.png" alt="금연캠프" /></a>
+                </div>
             </div>
         </div>
     </div>
