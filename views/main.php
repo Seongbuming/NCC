@@ -70,10 +70,9 @@
                 </div>
             </div>
             <div class="area area-custom">
-                <div class="inside" style="background-image: url('images/hospicecare.png'); background-position: 90% 30%;">
+                <div class="inside">
                     <div class="center">
-                        <p>아름다운 만남 행복한 동행</p>
-                        <h2 style="font-size: 1.7em;"><a href=".">호스피스완화의료</a></h2>
+                        <img src="images/banner_hospice.png" alt="호스피스완화의료" />
                     </div>
                 </div>
             </div>
@@ -85,11 +84,9 @@
                 </div>
             </div>
             <div class="area area-custom">
-                <div class="inside">
-                    <div class="center">
-                        <img src="images/cancerprevention.png" alt="암 예방으로 삶 건강하게" style="vertical-align: middle;" />
-                        <h2 style="display: inline-block; vertical-align: middle;"><a href=".">암예방 10대 수칙</a></h2>
-                    </div>
+                <div class="inside" style="text-align: center;">
+                    <img src="images/cancerprevention.png" alt="암 예방으로 삶 건강하게" />
+                    <h2 style="display: inline-block; font-size: 1.1em;"><a href=".">암예방 10대 수칙</a></h2>
                 </div>
             </div>
 
