@@ -321,6 +321,7 @@
 .contents .call .area-call .call-detail .phonenumber {
     width: 100%;
     max-width: 197px;
+    margin-bottom: 10px;
 } 
 .contents .call .area-call .call-detail p {
     margin: 0;
