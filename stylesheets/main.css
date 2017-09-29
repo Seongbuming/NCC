@@ -43,6 +43,10 @@
     }
 }
 
+.contents .area-custom .inside {
+    padding: 0 !important;
+    text-align: center;
+}
 .contents .area-custom h2 {
     color: #333 !important;
     font-weight: bold !important;

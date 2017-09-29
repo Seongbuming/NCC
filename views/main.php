@@ -71,9 +71,7 @@
             </div>
             <div class="area area-custom">
                 <div class="inside">
-                    <div class="center">
-                        <img src="images/banner_hospice.png" alt="호스피스완화의료" />
-                    </div>
+                    <img src="images/banner_hospice.png" alt="호스피스완화의료" />
                 </div>
             </div>
 
@@ -84,7 +82,7 @@
                 </div>
             </div>
             <div class="area area-custom">
-                <div class="inside" style="text-align: center;">
+                <div class="inside">
                     <img src="images/cancerprevention.png" alt="암 예방으로 삶 건강하게" />
                     <h2 style="display: inline-block; font-size: 1.1em;"><a href=".">암예방 10대 수칙</a></h2>
                 </div>
