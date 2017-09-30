@@ -667,7 +667,7 @@
     float: right;
 }
 .contents .area-apply .links {
-    margin-top: 35px;
+    margin-top: 45px;
     text-align: center;
 }
 .contents .area-apply .links .wrapper {
@@ -678,11 +678,10 @@
     display: inline-block;
 }
 .contents .area-apply .links a img {
-    height: 4em;
+    height: 42px;
 }
 .contents .area-apply .links a p {
     margin-bottom: 0;
-    font-weight: bold;
 }
 .contents .area-apply .links a:hover p {
     color: #107de4;
