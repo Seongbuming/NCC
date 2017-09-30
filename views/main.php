@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/common.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/layout.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="libraries/jquery.bxslider.min.css" />
 </head>
 
 <body>
@@ -242,7 +243,12 @@
             </div>
             <div class="area area-banner">
                 <div class="inside">
-                    <a href="."><img src="images/camp.png" alt="금연캠프" /></a>
+                    <ul class="bxslider">
+                        <li><a href="."><img src="images/img_popupzone01.png" alt="배너1" /></a></li>
+                        <li><a href="."><img src="images/img_popupzone02.png" alt="배너2" /></a></li>
+                        <li><a href="."><img src="images/img_popupzone03.png" alt="배너3" /></a></li>
+                        <li><a href="."><img src="images/img_popupzone04.png" alt="배너4" /></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -284,10 +290,11 @@
         </div>
     </div>
     
-    <script src="javascripts/jquery-1.12.4.min.js"></script>
-    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-        <script src="javascripts/selectivizr-min.js"></script>
+        <script src="libraries/selectivizr-min.js"></script>
     <![endif]-->
+    <script src="libraries/jquery-1.12.4.min.js"></script>
+    <script src="libraries/jquery.bxslider.min.js"></script>
+    <script src="javascripts/main.js"></script>
 </body>
 </html>

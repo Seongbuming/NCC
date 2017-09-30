@@ -724,6 +724,52 @@
 .contents .area-banner img {
     vertical-align: middle;
 }
+.contents .area-banner .banner {
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+}
+.contents .area-banner .banner .bx-controls {
+    display: inline-block;
+    width: auto;
+}
+.contents .area-banner .banner .bx-controls-auto {
+    float: right;
+    position: static;
+    width: auto !important;
+    height: 14px;
+    padding-top: 20px;
+}
+.contents .area-banner .banner .bx-controls-auto .bx-controls-auto-item {
+    vertical-align: top;
+}
+.contents .area-banner .banner .bx-controls-auto .bx-controls-auto-item a {
+    width: 10px;
+    height: 10px;
+}
+.contents .area-banner .banner .bx-pager {
+    float: left;
+    position: static;
+    width: auto !important;
+}
+.contents .area-banner .banner .bx-pager .bx-pager-item {
+    vertical-align: top;
+}
+.contents .area-banner .banner .bx-pager .bx-pager-item a {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 0 3px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+}
+.contents .area-banner .banner .bx-pager a:hover {
+    background-color: #ccc;
+}
+.contents .area-banner .banner .bx-pager a.active {
+    background-color: #107de4;
+    border: 2px solid #107de4;
+}
 /* Mobile */
 @media screen and (max-width: 720px) {
     .contents .area-banner {
