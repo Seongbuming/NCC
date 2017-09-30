@@ -477,6 +477,10 @@
     background-color: white;
     border: 1px solid #aaa;
 }
+.contents .area-subscribe .subscribe:hover {
+    color: #107de4;
+    border: 1px solid #107de4;
+}
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
     .contents .area-subscribe {
