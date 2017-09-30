@@ -503,6 +503,7 @@
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
 }
 .contents .area-sns .inside .facebook {
     background-image: url("../images/icons/facebook_off.png");
@@ -534,10 +535,6 @@
 .contents .area-sns .inside .youtube:hover {
     background-image: url("../images/icons/youtube_on.png");
 }
-.contents .area-sns .inside a img {
-    width: 25px;
-    vertical-align: middle;
-}
 /* Mobile */
 @media screen and (max-width: 720px) {
     .contents .area-sns {
@@ -566,8 +563,8 @@
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
-    .contents .area-sns .inside a img {
-        width: auto;
+    .contents .area-sns .inside a {
+        background-size: auto;
     }
 }
 
