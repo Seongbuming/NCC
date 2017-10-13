@@ -51,8 +51,7 @@ $(document).ready(function() {
 
             var top = $(".header").height();
             var height = $("html").height() - top;
-
-            $background.css("top", top);
+            
             $background.height(height);
         }
     }, function() {

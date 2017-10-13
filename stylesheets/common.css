@@ -1,16 +1,11 @@
 @charset "utf-8";
 
 html {
-    height: 100%;
     font-family: 'Malgun Gothic', Dotum, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: normal;
     /*word-break: keep-all;*/
     background-color: #f8f8f8;
-    overflow: auto;
-}
-body {
-    height: 100%;
     overflow: auto;
 }
 /* Mobile */
