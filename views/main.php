@@ -71,11 +71,11 @@
                             <li><a href=".">- 국가암검진사업</a></li>
                             <li><a href=".">- 7대암검진권고안(일반인)</a></li>
                             <li><a href=".">- 7대암검진권고안(의료인)</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul class="odd">
                             <li class="subject"><a href=".">발암요인</a></li>
@@ -110,24 +110,24 @@
                             <li><a href=".">- 정의</a></li>
                             <li><a href=".">- 발생부위</a></li>
                             <li><a href=".">- 발생기전</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">진단</a></li>
                             <li><a href=".">- 일반적인증상</a></li>
                             <li><a href=".">- 진단방법</a></li>
                             <li><a href=".">- 진행단계</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">치료</a></li>
@@ -144,7 +144,7 @@
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">재발 및 전이</a></li>
-                            <li></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">말기 암환자</a></li>
@@ -187,18 +187,18 @@
                             <li><a href=".">- 소화계 증상</a></li>
                             <li><a href=".">- 호흡기계 증상</a></li>
                             <li><a href=".">- 림프부종관리</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                     </div>
                 </div>
@@ -220,9 +220,9 @@
                             <li class="subject"><a href=".">사망률</a></li>
                             <li><a href=".">- 주요암 사망분율</a></li>
                             <li><a href=".">- 성별 주요암 사망분율</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">생존율</a></li>
@@ -236,9 +236,9 @@
                             <li class="subject"><a href=".">유병률</a></li>
                             <li><a href=".">- 암 유병률</a></li>
                             <li><a href=".">- 암종별 암유병률</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                     </div>
                 </div>
@@ -253,10 +253,10 @@
                             <li><a href=".">- 동영상 강의</a></li>
                             <li><a href=".">- 이미지</a></li>
                             <li><a href=".">- 영상물</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">텍스트</a></li>
@@ -301,17 +301,17 @@
                         </ul>
                         <ul>
                             <li class="subject"><a href=".">암관리법</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
+                            <li class="blank"></li>
                         </ul>
                     </div>
                 </div>

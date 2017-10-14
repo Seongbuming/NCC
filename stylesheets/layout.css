@@ -191,6 +191,9 @@
     list-style-type: square;
     overflow: visible;
 }
+.header .whole-menu .sub-menu .inner-menu ul > li.blank {
+    display: none;
+}
 .header .whole-menu .sub-menu .inner-menu ul > li a:hover {
     text-decoration: underline;
     font-weight: bold;
@@ -342,6 +345,9 @@
         list-style-type: none;
         background-color: white;
         border-bottom: 1px solid #858585;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li.blank {
+        display: list-item;
     }
     .header .whole-menu .sub-menu .inner-menu ul > li:last-child {
         border-bottom: none;
