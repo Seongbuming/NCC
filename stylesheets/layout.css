@@ -182,10 +182,6 @@
     font-size: .9em;
     color: #555555;
 }
-.header .whole-menu .sub-menu .inner-menu ul > li a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
 .header .whole-menu .sub-menu .inner-menu ul > li.subject {
     height: 45px;
     line-height: 45px;
@@ -195,14 +191,14 @@
     list-style-type: square;
     overflow: visible;
 }
+.header .whole-menu .sub-menu .inner-menu ul > li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
 /* Mobile */
 @media screen and (max-width: 720px) {
     .header .whole-menu {
         max-width: 330px;
-        height: auto;
-    }
-    .header .whole-menu .container {
-        height: auto;
     }
     .header .whole-menu .section-logo {
         height: 30px;
@@ -232,12 +228,25 @@
         margin-top: 7.5px;
         background-size: 40px;
     }
+    .header .whole-menu .sub-menu .title {
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li {
+        height: 35px;
+        line-height: 35px;
+        padding-left: 10px;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li.subject {
+        height: 40px;
+        line-height: 40px;
+    }
 }
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1200px) {
     .header .whole-menu {
         max-width: 540px;
-        height: 100%;
     }
     .header .whole-menu .section-logo {
         height: 38px;
@@ -266,12 +275,27 @@
         line-height: 80px;
         margin-top: 10px;
     }
+    .header .whole-menu .sub-menu .title {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li.subject {
+        height: 45px;
+        line-height: 45px;
+    }
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
     .header .whole-menu {
         position: fixed;
         width: 100%;
+        height: 100%;
         left: 0;
         margin-left: 0;
         border: none;
@@ -281,6 +305,46 @@
     }
     .header .whole-menu .section-contact {
         display: block;
+    }
+    .header .whole-menu .sub-menu {
+        float: none;
+        width: 100% !important;
+        min-height: auto;
+        border: none;
+    }
+    .header .whole-menu .sub-menu .title {
+        text-align: left;
+        border-bottom: 1px solid #858585;
+    }
+    .header .whole-menu .sub-menu:last-child {
+        margin-bottom: -1px;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul {
+        float: left;
+        width: 50%;
+        padding: 0;
+        border-bottom: 1px solid #858585;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul:last-child:not(:nth-child(even)) {
+        width: 100%;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li {
+        color: #333;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #cacaca;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li.subject {
+        font-weight: normal;
+        list-style-type: none;
+        background-color: white;
+        border-bottom: 1px solid #858585;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li:last-child {
+        border-bottom: none;
+    }
+    .header .whole-menu .sub-menu .inner-menu ul > li.subject a:hover {
+        text-decoration: none;
+        color: #107de4;
     }
 }
 

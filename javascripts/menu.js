@@ -1,11 +1,12 @@
 $(document).ready(function() {
     function resizeWholeMenu() {
-        if ($(document).width() < 1200)
-            return;
-
-        var windowHeight = $(window).height();
-        var topSpace = $(".header .header-top").height();
-        $(".header .whole-menu").height(windowHeight - topSpace);
+        if ($(document).width() < 1200) { // Mobile & Tablet
+            
+        } else { // PC
+            var windowHeight = $(window).height();
+            var topSpace = $(".header .header-top").height();
+            $(".header .whole-menu").height(windowHeight - topSpace);
+        }
     }
 
     resizeWholeMenu();
