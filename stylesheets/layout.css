@@ -315,6 +315,7 @@
     .header .whole-menu .sub-menu .title {
         text-align: left;
         border-bottom: 1px solid #858585;
+        cursor: pointer;
     }
     .header .whole-menu .sub-menu:last-child {
         margin-bottom: -1px;

@@ -1,12 +1,36 @@
 $(document).ready(function() {
     function resizeWholeMenu() {
-        // PC에서만 수행
-        if ($(document).width() < 1200)
+        if ($(document).width() < 1200) { // Mobile & Tablet
+            $(".header .whole-menu").each(function() {
+                if (this.style.height.length > 0)
+                    $(this)
+                        .css("height", "")
+                        .find(".inner-menu")
+                            .css("display", "none");
+            });
+        } else { // PC
+            var windowHeight = $(window).height();
+            var topSpace = $(".header .header-top").height();
+            $(".header .whole-menu").height(windowHeight - topSpace);
+
+            $(".header .whole-menu .inner-menu").css("display", "block");
+        }
+    }
+
+    function toggleWholeMenuSubMenu() {
+        // Mobile & Tablet에서만 수행
+        if ($(document).width() >= 1200)
             return;
 
-        var windowHeight = $(window).height();
-        var topSpace = $(".header .header-top").height();
-        $(".header .whole-menu").height(windowHeight - topSpace);
+        var $inner_menu = $(this).siblings(".inner-menu");
+        if ($inner_menu.length !== 0) {
+            var display = $inner_menu.css("display");
+
+            if (display == "none")
+                $inner_menu.css("display", "block");
+            else
+                $inner_menu.css("display", "none");
+        }
     }
 
     function onMenuEnter() {
@@ -93,5 +117,6 @@ $(document).ready(function() {
 
     resizeWholeMenu();
     $(window).resize(resizeWholeMenu);
+    $(".header .whole-menu .sub-menu .title").click(toggleWholeMenuSubMenu);
     $(".header .header-bottom .menu > li").hover(onMenuEnter, onMenuLeave);
 });
