@@ -2,6 +2,8 @@ $(document).ready(function() {
     function resizeWholeMenu() {
         if ($(document).width() < 1200) { // Mobile & Tablet
             $(".header .whole-menu").each(function() {
+                $(this).find(".sub-menu").css("height", "");
+
                 if (this.style.height.length > 0)
                     $(this)
                         .css("height", "")
@@ -11,9 +13,17 @@ $(document).ready(function() {
         } else { // PC
             var windowHeight = $(window).height();
             var topSpace = $(".header .header-top").height();
+
+            // 전체 메뉴 크기 설정
             $(".header .whole-menu").height(windowHeight - topSpace);
 
-            $(".header .whole-menu .inner-menu").css("display", "block");
+            // 서브 메뉴 크기 설정
+            var maxSubMenuHeight = $(".header .whole-menu .container").get(0).scrollHeight;
+            if (maxSubMenuHeight > 0)
+                $(".header .whole-menu .sub-menu").height(maxSubMenuHeight);
+
+            // 모든 서브 메뉴 활성화
+            $(".header .whole-menu .sub-menu .inner-menu").css("display", "block");
         }
     }
 
@@ -36,9 +46,10 @@ $(document).ready(function() {
     function toggleWholeMenu() {
         var $whole_menu = $(".header .whole-menu");
 
-        if ($whole_menu.css("display") === "none")
+        if ($whole_menu.css("display") === "none") {
             $whole_menu.css("display", "block");
-        else
+            resizeWholeMenu();
+        } else
             $whole_menu.css("display", "none");
     }
 
