@@ -21,9 +21,6 @@ $(document).ready(function() {
             var maxSubMenuHeight = $(".header .whole-menu .container").get(0).scrollHeight;
             if (maxSubMenuHeight > 0)
                 $(".header .whole-menu .sub-menu").height(maxSubMenuHeight);
-
-            // 모든 서브 메뉴 활성화
-            $(".header .whole-menu .sub-menu .inner-menu").css("display", "block");
         }
     }
 
@@ -32,15 +29,7 @@ $(document).ready(function() {
         if ($(document).width() >= 1200)
             return;
 
-        var $inner_menu = $(this).siblings(".inner-menu");
-        if ($inner_menu.length !== 0) {
-            var display = $inner_menu.css("display");
-
-            if (display == "none")
-                $inner_menu.css("display", "block");
-            else
-                $inner_menu.css("display", "none");
-        }
+        $(this).parent().toggleClass("actived");
     }
 
     function toggleWholeMenu() {
