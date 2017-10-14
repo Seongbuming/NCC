@@ -35,6 +35,7 @@
         </div>
         <div class="whole-menu">
             <div class="background"></div>
+            <button class="whole-menu-button" title="전체 메뉴 닫기"></button>
             <div class="container">
                 <div class="section-logo">
                     <span class="vertical-middle"></span>

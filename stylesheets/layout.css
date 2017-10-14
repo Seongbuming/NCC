@@ -21,7 +21,7 @@
 .header .header-top .container > * > *:last-child {
     margin-right: 0;
 }
-.header .whole-menu-button {
+.header .header-top .whole-menu-button {
     width: 50px;
     background-image: url("../images/icons/menu_white.png");
     background-color: #606060;
@@ -83,13 +83,14 @@
 }
 
 .header .whole-menu {
-    /*display: none;*/
+    display: none;
     position: absolute;
     width: 1200px;
     left: 50%;
     margin-top: -1px;
     margin-left: -600px;
     z-index: 1;
+    overflow: visible;
     border: 1px solid #3f3f3f;
 }
 .header .whole-menu .background {
@@ -102,6 +103,15 @@
     background: black;
     opacity: 0.4;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+.header .whole-menu .whole-menu-button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 1210px;
+    background-image: url("../images/icons/whole_menu_close_pc.png");
+    background-color: transparent;
 }
 .header .whole-menu .container {
     height: 100%;
@@ -302,6 +312,14 @@
         left: 0;
         margin-left: 0;
         border: none;
+    }
+    .header .whole-menu .whole-menu-button {
+        width: 18px;
+        height: 17px;
+        top: 8px;
+        left: 100%;
+        margin-left: 8px;
+        background-image: url("../images/icons/whole_menu_close_mobile.png");
     }
     .header .whole-menu .section-logo {
         display: block;

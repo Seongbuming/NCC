@@ -33,6 +33,15 @@ $(document).ready(function() {
         }
     }
 
+    function toggleWholeMenu() {
+        var $whole_menu = $(".header .whole-menu");
+
+        if ($whole_menu.css("display") === "none")
+            $whole_menu.css("display", "block");
+        else
+            $whole_menu.css("display", "none");
+    }
+
     function onMenuEnter() {
         // PC에서만 수행
         if ($(document).width() < 1200)
@@ -118,5 +127,6 @@ $(document).ready(function() {
     resizeWholeMenu();
     $(window).resize(resizeWholeMenu);
     $(".header .whole-menu .sub-menu .title").click(toggleWholeMenuSubMenu);
+    $(".header .whole-menu-button").click(toggleWholeMenu);
     $(".header .header-bottom .menu > li").hover(onMenuEnter, onMenuLeave);
 });
