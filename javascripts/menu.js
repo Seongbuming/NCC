@@ -1,5 +1,20 @@
 $(document).ready(function() {
+    function resizeWholeMenu() {
+        if ($(document).width() < 1200)
+            return;
+
+        var windowHeight = $(window).height();
+        var topSpace = $(".header .header-top").height();
+        $(".header .whole-menu").height(windowHeight - topSpace);
+    }
+
+    resizeWholeMenu();
+    $(window).resize(resizeWholeMenu);
+
     $(".header .header-bottom .menu > li").hover(function() {
+        if ($(document).width() < 1200)
+            return;
+
         // .inner-menu 마크업
         var $inner_menu = $(this).find(".inner-menu");
         if ($inner_menu.length !== 0) {
@@ -55,6 +70,9 @@ $(document).ready(function() {
             $background.height(height);
         }
     }, function() {
+        if ($(document).width() < 1200)
+            return;
+
         var $inner_menu = $(this).find(".inner-menu");
         if ($inner_menu.length !== 0) {
             $inner_menu.css("display", "none");

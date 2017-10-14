@@ -87,6 +87,7 @@
     position: absolute;
     width: 1200px;
     left: 50%;
+    margin-top: -1px;
     margin-left: -600px;
     z-index: 1;
     border: 1px solid #3f3f3f;
@@ -152,6 +153,47 @@
 }
 .header .whole-menu .section-contact .call {
     background-image: url("../images/icons/phone.png");
+}
+.header .whole-menu .sub-menu {
+    float: left;
+    width: 196px;
+    min-height: 100%;
+    border-right: 1px solid #cacaca;
+}
+.header .whole-menu .sub-menu:last-child {
+    width: 197px;
+    border-right: none;
+}
+.header .whole-menu .sub-menu .title {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-size: 1.28em;
+    font-weight: bold;
+    border-bottom: 2px solid #107de4;
+}
+.header .whole-menu .sub-menu .inner-menu ul {
+    margin: 0;
+    padding: 0 0 0 30px;
+}
+.header .whole-menu .sub-menu .inner-menu ul > li {
+    height: 30px;
+    line-height: 30px;
+    font-size: .9em;
+    color: #555555;
+}
+.header .whole-menu .sub-menu .inner-menu ul > li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.header .whole-menu .sub-menu .inner-menu ul > li.subject {
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.14em;
+    font-weight: bold;
+    color: black;
+    list-style-type: square;
+    overflow: visible;
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
