@@ -21,7 +21,7 @@
 .header .header-top .container > * > *:last-child {
     margin-right: 0;
 }
-.header .header-top .whole-menu {
+.header .whole-menu-button {
     width: 50px;
     background-image: url("../images/icons/menu_white.png");
     background-color: #606060;
@@ -72,6 +72,176 @@
     font-size: 14px;
     background-color: #686868;
 }
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+    .header {
+        border-bottom: 1px solid #aaa;
+    }    
+    .header .header-top {
+        display: none;
+    }
+}
+
+.header .whole-menu {
+    /*display: none;*/
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 1;
+    border: 1px solid #3f3f3f;
+}
+.header .whole-menu .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: black;
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+.header .whole-menu .container {
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+}
+.header .whole-menu .section-logo {
+    display: none;
+    text-align: center;
+    background-color: #244997;
+}
+.header .whole-menu .section-logo img {
+    vertical-align: middle;
+}
+.header .whole-menu .section-contact {
+    display: none;
+    border-bottom: 1px solid #858585;
+}
+.header .whole-menu .section-contact .contact-info {
+    display: inline-block;
+    height: 100%;
+    line-height: 1;
+    vertical-align: middle;
+}
+.header .whole-menu .section-contact .contact-info .caption {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+.header .whole-menu .section-contact .contact-buttons {
+    float: right;
+    height: 100%;
+}
+.header .whole-menu .section-contact a {
+    float: right;
+    text-align: center;
+    font-size: .9em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.header .whole-menu .section-contact a span {
+    height: 1em;
+    line-height: 1em;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+.header .whole-menu .section-contact .email {
+    background-image: url("../images/icons/email.png");
+}
+.header .whole-menu .section-contact .call {
+    background-image: url("../images/icons/phone.png");
+}
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .header .whole-menu {
+        max-width: 330px;
+        height: auto;
+    }
+    .header .whole-menu .container {
+        height: auto;
+    }
+    .header .whole-menu .section-logo {
+        height: 30px;
+    }
+    .header .whole-menu .section-logo img {
+        height: 20px;
+    }
+    .header .whole-menu .section-contact {
+        height: 75px;
+        line-height: 75px;
+    }
+    .header .whole-menu .section-contact .contact-info {
+        height: 45px;
+        margin-left: 20px;
+    }
+    .header .whole-menu .section-contact .contact-info .caption {
+        margin-bottom: 7px;
+        font-size: 1.15em;
+    }
+    .header .whole-menu .section-contact .contact-info .phonenumber {
+        height: 20px;
+    }
+    .header .whole-menu .section-contact a {
+        width: 70px;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 7.5px;
+        background-size: 40px;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    .header .whole-menu {
+        max-width: 540px;
+        height: 100%;
+    }
+    .header .whole-menu .section-logo {
+        height: 38px;
+    }
+    .header .whole-menu .section-logo img {
+        height: 24px;
+    }
+    .header .whole-menu .section-contact {
+        height: 100px;
+        line-height: 100px;
+    }
+    .header .whole-menu .section-contact .contact-info {
+        height: 60px;
+        margin-left: 30px;
+    }
+    .header .whole-menu .section-contact .contact-info .caption {
+        margin-bottom: 10px;
+        font-size: 1.28em;
+    }
+    .header .whole-menu .section-contact .contact-info .phonenumber {
+        height: 30px;
+    }
+    .header .whole-menu .section-contact a {
+        width: 100px;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 10px;
+    }
+}
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+    .header .whole-menu {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        border: none;
+    }
+    .header .whole-menu .section-logo {
+        display: block;
+    }
+    .header .whole-menu .section-contact {
+        display: block;
+    }
+}
+
 .header .header-bottom {
     background-color: white;
 }
@@ -84,12 +254,11 @@
     height: 99px;
     line-height: 99px;
 }
-
-.header .header-bottom .whole-menu,
+.header .header-bottom .whole-menu-button,
 .header .header-bottom .button-search {
     display: none;
 }
-.header .header-bottom .whole-menu {
+.header .header-bottom .whole-menu-button {
     float: left;
     background-image: url("../images/icons/menu_gray.png");
     background-color: transparent;
@@ -184,10 +353,11 @@
     position: absolute;
     left: 0;
     right: 0;
+    margin-top: -2px;
     z-index: 1;
     background-color: black;
     opacity: 0.4;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
@@ -199,7 +369,7 @@
         height: 59px;
         line-height: 59px;
     }
-    .header .header-bottom .whole-menu,
+    .header .header-bottom .whole-menu-button,
     .header .header-bottom .button-search {
         width: 24px;
         background-size: 24px;
@@ -218,7 +388,7 @@
         height: 75px;
         line-height: 75px;
     }
-    .header .header-bottom .whole-menu,
+    .header .header-bottom .whole-menu-button,
     .header .header-bottom .button-search {
         width: 37px;
         background-size: 37px;
@@ -229,16 +399,10 @@
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
-    .header {
-        border-bottom: 1px solid #aaa;
-    }    
-    .header .header-top {
-        display: none;
-    }
     .header .header-bottom .container {
         width: auto;
     }
-    .header .header-bottom .whole-menu,
+    .header .header-bottom .whole-menu-button,
     .header .header-bottom .button-search {
         display: inline-block;
     }

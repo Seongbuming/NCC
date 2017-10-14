@@ -31,8 +31,22 @@
                     <button class="button-search" title="검색"></button>
                     <button class="english">English</button>
                 </div>
+            </div>
+        </div>
+        <div class="whole-menu">
+            <div class="background"></div>
+            <div class="container">
+                <div class="section-logo">
+                    <span class="vertical-middle"></span>
+                    <a href="."><img src="images/logo_white.png" alt="국가암정보센터" /></a>
+                </div>
+                <div class="section-contact">
+                    <div class="contact-info">
+                        <p class="caption">암정보 상담센터</p>
+                        <img class="phonenumber" src="images/phonenumber.png" alt="1577-8899" />
                     </div>
-                    </div>
+                    <a class="email" href="."><span>이메일상담</span></a>
+                    <a class="call" href="."><span>전화상담</span></a>
                 </div>
             </div>
         </div>

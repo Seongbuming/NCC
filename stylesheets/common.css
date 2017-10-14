@@ -96,3 +96,9 @@ ul.menu > li:hover {
 .more:hover {
     background-image: url("../images/icons/more_on.png");
 }
+
+.vertical-middle {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
