@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".menu > li").hover(function() {
+    $(".header .header-bottom .menu > li").hover(function() {
         // .inner-menu 마크업
         var $inner_menu = $(this).find(".inner-menu");
         if ($inner_menu.length !== 0) {
