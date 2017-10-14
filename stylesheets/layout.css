@@ -319,6 +319,9 @@
     .header .whole-menu .sub-menu:last-child {
         margin-bottom: -1px;
     }
+    .header .whole-menu .sub-menu .inner-menu {
+        display: none;
+    }
     .header .whole-menu .sub-menu .inner-menu ul {
         float: left;
         width: 50%;

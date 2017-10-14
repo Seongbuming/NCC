@@ -1,5 +1,6 @@
 $(document).ready(function() {
     function resizeWholeMenu() {
+        // PC에서만 수행
         if ($(document).width() < 1200)
             return;
 
@@ -8,10 +9,8 @@ $(document).ready(function() {
         $(".header .whole-menu").height(windowHeight - topSpace);
     }
 
-    resizeWholeMenu();
-    $(window).resize(resizeWholeMenu);
-
-    $(".header .header-bottom .menu > li").hover(function() {
+    function onMenuEnter() {
+        // PC에서만 수행
         if ($(document).width() < 1200)
             return;
 
@@ -69,7 +68,10 @@ $(document).ready(function() {
             
             $background.height(height);
         }
-    }, function() {
+    }
+
+    function onMenuLeave() {
+        // PC에서만 수행
         if ($(document).width() < 1200)
             return;
 
@@ -87,5 +89,9 @@ $(document).ready(function() {
         var $background = $(".header .header-bottom .menu-background");
         if ($background.length !== 0)
             $background.css("display", "none");
-    });
+    }
+
+    resizeWholeMenu();
+    $(window).resize(resizeWholeMenu);
+    $(".header .header-bottom .menu > li").hover(onMenuEnter, onMenuLeave);
 });
