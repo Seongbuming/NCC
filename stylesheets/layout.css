@@ -588,6 +588,35 @@
     }
 }
 
+.navigation {
+    display: none;
+}
+.navigation .section-top {
+    overflow-x: auto;
+}
+.navigation .gnb-top {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navigation .gnb-top::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.navigation .gnb-top > li {
+    float: left;
+}
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+    .navigation {
+        display: block;
+    }
+}
+
 .footer {
     margin-top: 60px;
     font-size: .9em;
