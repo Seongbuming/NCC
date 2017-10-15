@@ -451,7 +451,7 @@
 .header .header-bottom .menu > li > span {
     font-size: 1.2em;
 }
-.header .header-bottom .arrow {
+.header .header-bottom > .arrow {
     display: none;
     position: absolute;
     margin-top: -8px;
@@ -509,6 +509,17 @@
 .header .header-bottom .inner-menu ul > li.subject a:hover {
     color: #107de4;
     text-decoration: none;
+}
+.header .header-bottom .inner-menu ul > li.subject a .subject-arrow {
+    float: right;
+    width: 7px;
+    height: 11px;
+    margin-top: 18px;
+    margin-right: 14px;
+    background-image: url("../images/icons/arrow_right_off.png");
+}
+.header .header-bottom .inner-menu ul > li.subject a:hover .subject-arrow {
+    background-image: url("../images/icons/arrow_right_on.png");
 }
 .header .header-bottom .menu-background {
     display: none;
