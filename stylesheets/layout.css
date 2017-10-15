@@ -451,7 +451,7 @@
 .header .header-bottom .menu > li > span {
     font-size: 1.2em;
 }
-.header .header-bottom > .arrow {
+.header .header-bottom .arrow {
     display: none;
     position: absolute;
     margin-top: -8px;
