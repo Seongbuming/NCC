@@ -200,12 +200,14 @@
 .header .whole-menu .sub-menu .inner-menu ul > li {
     height: 30px;
     line-height: 30px;
+    text-indent: -.8em;
     font-size: .9em;
     color: #555555;
 }
 .header .whole-menu .sub-menu .inner-menu ul > li.subject {
     height: 45px;
     line-height: 45px;
+    text-indent: 0;
     font-size: 1.14em;
     font-weight: bold;
     color: black;
@@ -380,6 +382,7 @@
     }
     .header .whole-menu .sub-menu .inner-menu ul > li {
         color: #333;
+        text-indent: 0;
         background-color: #f1f1f1;
         border-bottom: 1px solid #cacaca;
     }

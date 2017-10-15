@@ -5,17 +5,14 @@ $(document).ready(function() {
                 $(this).find(".sub-menu").css("height", "");
 
                 if (this.style.height.length > 0)
-                    $(this)
-                        .css("height", "")
-                        .find(".inner-menu")
-                            .css("display", "none");
+                    $(this).css("height", "");
             });
         } else { // PC
             var windowHeight = $(window).height();
             var topSpace = $(".header .header-top").height();
 
             // 전체 메뉴 크기 설정
-            $(".header .whole-menu").height(windowHeight - topSpace);
+            $(".header .whole-menu").height(windowHeight - topSpace - 1);
 
             // 서브 메뉴 크기 설정
             var maxSubMenuHeight = $(".header .whole-menu .container").get(0).scrollHeight;
