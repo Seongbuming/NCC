@@ -25,7 +25,9 @@
             <p class="caption">암정보 상담센터</p>
             <img class="phonenumber" src="images/phonenumber.png" alt="1577-8899" />
         </div>
-        <a class="email" href="."><span>이메일상담</span></a>
-        <a class="call" href="."><span>전화상담</span></a>
+        <div class="contact-links">
+            <a class="call" href="."><span>전화상담</span></a>
+            <a class="email" href="."><span>이메일상담</span></a>
+        </div>
     </div>
 </div>

@@ -5,15 +5,22 @@ $(document).ready(function() {
             return;
 
         var $gnb_top = $(".navigation .gnb-top");
-        var width = 0 ;
+        var width = 0;
 
         $gnb_top.children("li").each(function() {
-            width += $(this).width();
+            width += $(this).outerWidth(true);
         });
-        if (width !== $gnb_top.width())
-            $gnb_top.width(width);
+        if (width !== $gnb_top.innerWidth()) {
+            $gnb_top.innerWidth(width+1);
+        }
+    }
+
+    function toggleBottomGNB() {
+        $(".navigation .section-bottom").toggleClass("actived");
     }
 
     resizeTopGNB();
     $(window).resize(resizeTopGNB);
+
+    $(".navigation .gnb-bottom-button").click(toggleBottomGNB);
 });

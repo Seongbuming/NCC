@@ -14,6 +14,7 @@
     </div>
 
     <div class="contents">
+        <h2>서브 타이틀</h2>
     </div>
 
     <div class="footer">
