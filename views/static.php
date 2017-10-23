@@ -133,6 +133,56 @@
                     </div>
                 </div>
             </div>
+
+            <div class="evaluation">
+                <div class="print_modified">
+                    <button>현재페이지 인쇄</button>
+                    <span>최종수정일 : 2016년 11월 04일</span>
+                </div>
+                <div class="eval_section">
+                    <p>이 페이지에서 제공하는 정보에 만족하셨습니까?</p>
+                    <ul>
+                        <li>
+                            <input type="radio" id="score_5" name="score" value="5" />
+                            <label for="score_5">
+                                <img src="images/icons/star_5.png" alt="5점" />
+                                <span>매우 만족</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="score_4" name="score" value="4" />
+                            <label for="score_4">
+                                <img src="images/icons/star_4.png" alt="4점" />
+                                <span>만족</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="score_3" name="score" value="3" />
+                            <label for="score_3">
+                                <img src="images/icons/star_3.png" alt="3점" />
+                                <span>보통</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="score_2" name="score" value="2" />
+                            <label for="score_2">
+                                <img src="images/icons/star_2.png" alt="2점" />
+                                <span>불만족</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="score_1" name="score" value="1" />
+                            <label for="score_1">
+                                <img src="images/icons/star_1.png" alt="1점" />
+                                <span>매우 불만족</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <textarea>
+                </textarea>
+                <button class="submit">평가하기</button>
+                </div>
+            </div>
         </div>
     </div>
 
