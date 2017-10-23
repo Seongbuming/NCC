@@ -15,8 +15,20 @@
     </div>
 
     <div class="contents">
+        <div class="left-menu">
+            <h2>암예방과 검진</h2>
+            <ul>
+                <li class="active">
+                    <div class="util">
+                        <span class="title">예방</span>
+                        <div class="arrow"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
         <div class="sub">
-            <h2>서브 타이틀</h2>
+            <h3>서브 타이틀</h3>
 
             <ul class="tab">
                 <li name="tab-1">
@@ -43,7 +55,7 @@
 
                 <div id="inner-tab-1" class="inner-tab-contents">
                     <p>아직도 많은 암의 원인이 밝혀지지 않고 있기는 하나 여러 역학연구를 통한 발암요인과 암발생 간의 인과관계에 근거하여 위험요인들을 밝혀내고 있습니다.<br>세계보건기구의 산하기구인 국제암연구소(IARC) 및 미국 국립암협회지에서 밝힌 암의 원인은 아래와 같습니다.</p>
-                    <h3>개요</h3>
+                    <h4>개요</h4>
                     <p class="square">국제암연구소(IARC)와 미국 국립암협회지에서 밝힌 암의 원인</p>
                     <p class="minus">국제암연구소(IARC)와 미국 국립암협회지에서 밝힌 암의 원인</p>
                     <table summary="원인, 국제암연구소, 미국 국립암협회지에 대한 정보가 있습니다.">
