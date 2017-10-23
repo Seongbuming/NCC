@@ -225,6 +225,7 @@
     border: 1px solid #aabee0;
 }
 .contents .textbox img {
+    max-width: 100%;
     margin-bottom: 10px;
     border: 1px solid #ddd;
 }
