@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <?=$this->loadLayout("head")?>
-    <link rel="stylesheet" type="text/css" href="libraries/jquery.bxslider.min.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="libraries/jquery.bxslider.min.css" />
+    <link rel="stylesheet" href="stylesheets/main.css" />
 </head>
 
 <body>

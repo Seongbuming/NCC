@@ -1,6 +1,6 @@
 <div class="section-top">
     <ul class="gnb-top">
-        <li class="selected"><a href=".">암에방과 검진</a></li>
+        <li class="selected"><a href=".">암예방과 검진</a></li>
         <li><a href=".">내가 알고 싶은 암</a></li>
         <li><a href=".">암환자 생활백서</a></li>
         <li><a href=".">통계로 보는 암</a></li>
