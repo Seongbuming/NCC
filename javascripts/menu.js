@@ -125,5 +125,6 @@ $(document).ready(function() {
     $(window).resize(resizeWholeMenu);
     $(".header .whole-menu .sub-menu .title").click(toggleWholeMenuSubMenu);
     $(".header .whole-menu-button").click(toggleWholeMenu);
+    $(".header .whole-menu .background").click(toggleWholeMenu);
     $(".header .header-bottom .menu > li").hover(onMenuEnter, onMenuLeave);
 });
