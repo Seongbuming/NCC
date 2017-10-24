@@ -15,6 +15,12 @@ $(document).ready(function() {
         $(this).parent("li").toggleClass("active");
     }
 
+    function openInnerMenu() {
+        var $li = $(this).parent("li");
+        $li.parent().children(".active").removeClass("active");
+        $li.toggleClass("active");
+    }
+
     function openInnerTab() {
         var name = $(this).attr("name");
         var $tab = $(`#${name}`).css("display", "block");
@@ -28,7 +34,7 @@ $(document).ready(function() {
     $(window).resize(resizeTab);
 
     $(".contents .left-menu > ul > li > .util").click(openMenu);
-    $(".contents .left-menu > ul > li > .inner-menu > li > .util").click(openMenu);
+    $(".contents .left-menu > ul > li > .inner-menu > li > .util").click(openInnerMenu);
 
     $(".contents .inner-tab > li").click(openInnerTab);
 });
