@@ -482,37 +482,36 @@ html {
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
 }
 .contents .area-sns .inside .facebook {
-    background-image: url("../images/icons/facebook_off.png");
+    background-image: url("../images/icons/facebook_pc_off.png");
 }
 .contents .area-sns .inside .facebook:hover {
-    background-image: url("../images/icons/facebook_on.png");
+    background-image: url("../images/icons/facebook_pc_on.png");
 }
 .contents .area-sns .inside .twitter {
-    background-image: url("../images/icons/twitter_off.png");
+    background-image: url("../images/icons/twitter_pc_off.png");
 }
 .contents .area-sns .inside .twitter:hover {
-    background-image: url("../images/icons/twitter_on.png");
+    background-image: url("../images/icons/twitter_pc_on.png");
 }
 .contents .area-sns .inside .blog {
-    background-image: url("../images/icons/blog_off.png");
+    background-image: url("../images/icons/blog_pc_off.png");
 }
 .contents .area-sns .inside .blog:hover {
-    background-image: url("../images/icons/blog_on.png");
+    background-image: url("../images/icons/blog_pc_on.png");
 }
 .contents .area-sns .inside .post {
-    background-image: url("../images/icons/post_off.png");
+    background-image: url("../images/icons/post_pc_off.png");
 }
 .contents .area-sns .inside .post:hover {
-    background-image: url("../images/icons/post_on.png");
+    background-image: url("../images/icons/post_pc_on.png");
 }
 .contents .area-sns .inside .youtube {
-    background-image: url("../images/icons/youtube_off.png");
+    background-image: url("../images/icons/youtube_pc_off.png");
 }
 .contents .area-sns .inside .youtube:hover {
-    background-image: url("../images/icons/youtube_on.png");
+    background-image: url("../images/icons/youtube_pc_on.png");
 }
 /* Mobile */
 @media screen and (max-width: 720px) {
@@ -542,8 +541,35 @@ html {
 }
 /* Mobile & Tablet */
 @media screen and (max-width: 1200px) {
-    .contents .area-sns .inside a {
-        background-size: auto;
+    .contents .area-sns .inside .facebook {
+        background-image: url("../images/icons/facebook_off.png");
+    }
+    .contents .area-sns .inside .facebook:hover {
+        background-image: url("../images/icons/facebook_on.png");
+    }
+    .contents .area-sns .inside .twitter {
+        background-image: url("../images/icons/twitter_off.png");
+    }
+    .contents .area-sns .inside .twitter:hover {
+        background-image: url("../images/icons/twitter_on.png");
+    }
+    .contents .area-sns .inside .blog {
+        background-image: url("../images/icons/blog_off.png");
+    }
+    .contents .area-sns .inside .blog:hover {
+        background-image: url("../images/icons/blog_on.png");
+    }
+    .contents .area-sns .inside .post {
+        background-image: url("../images/icons/post_off.png");
+    }
+    .contents .area-sns .inside .post:hover {
+        background-image: url("../images/icons/post_on.png");
+    }
+    .contents .area-sns .inside .youtube {
+        background-image: url("../images/icons/youtube_off.png");
+    }
+    .contents .area-sns .inside .youtube:hover {
+        background-image: url("../images/icons/youtube_on.png");
     }
 }
 

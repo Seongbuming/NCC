@@ -712,6 +712,9 @@
     width: 1200px;
     margin: 0 auto;
 }
+.navigation .state {
+    float: left;
+}
 .navigation .state div {
     float: left;
     margin-right: 15px;
@@ -730,6 +733,46 @@
 .navigation .state div a {
     display: inline-block;
     vertical-align: top;
+}
+.navigation .sns {
+    float: right;
+}
+.navigation .sns a {
+    float: left;
+    width: 33px;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navigation .sns .facebook {
+    background-image: url("../images/icons/facebook_pc_off.png");
+}
+.navigation .sns .facebook:hover {
+    background-image: url("../images/icons/facebook_pc_on.png");
+}
+.navigation .sns .twitter {
+    background-image: url("../images/icons/twitter_pc_off.png");
+}
+.navigation .sns .twitter:hover {
+    background-image: url("../images/icons/twitter_pc_on.png");
+}
+.navigation .sns .blog {
+    background-image: url("../images/icons/blog_pc_off.png");
+}
+.navigation .sns .blog:hover {
+    background-image: url("../images/icons/blog_pc_on.png");
+}
+.navigation .sns .post {
+    background-image: url("../images/icons/post_pc_off.png");
+}
+.navigation .sns .post:hover {
+    background-image: url("../images/icons/post_pc_on.png");
+}
+.navigation .sns .youtube {
+    background-image: url("../images/icons/youtube_pc_off.png");
+}
+.navigation .sns .youtube:hover {
+    background-image: url("../images/icons/youtube_pc_on.png");
 }
 /* Mobile */
 @media screen and (max-width: 720px) {

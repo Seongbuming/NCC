@@ -42,5 +42,12 @@
             <div><a href=".">일반적인 암예방</a></div>
             <div><a href=".">일반적인 암의 원인</a></div>
         </div>
+        <div class="sns">
+            <a class="facebook" href=".">페이스북</a>
+            <a class="twitter" href=".">트위터</a>
+            <a class="blog" href=".">블로그</a>
+            <a class="post" href=".">포스트</a>
+            <a class="youtube" href=".">유튜브</a>
+        </div>
     </div>
 </div>
