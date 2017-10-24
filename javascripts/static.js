@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     function openInnerTab() {
         var name = $(this).attr("name");
-        var $tab = $(`#${name}`).css("display", "block");
+        var $tab = $("#"+name).css("display", "block");
 
         $(this).parent().find(".selected").removeClass("selected");
         $(this).addClass("selected");

@@ -221,35 +221,32 @@
 
 .contents .inner-tab {
     margin: 0;
-    padding: 0;
-    border-bottom: 2px solid #02a1e3;
+    padding: 0 0 2px 0;
+    background-image: url("../images/border_blue.png");
 }
 .contents .inner-tab > li {
     float: left;
     display: block;
-    margin-top: 5px;
-    padding: 14px 30px;
+    height: 42px;
+    line-height: 42px;
+    margin: 5px -1px 2px 0;
+    padding: 0 30px;
     font-size: 1.14em;
     background-color: #eee;
     border: 1px solid #858585;
     border-bottom: none;
     cursor: pointer;
 }
-.contents .inner-tab > li:nth-child(n+2) {
-    margin-left: -1px;
-}
 .contents .inner-tab > li.selected {
+    height: 46px;
+    line-height: 46px;
     margin-top: 0;
-    padding: 16px 30px;
+    margin-right: 0;
     font-weight: bold;
     color: #02a1e3;
     background: white;
     border-color: #02a1e3;
     border-width: 2px;
-}
-.contents .inner-tab > li.selected + li {
-    border-left: none;
-    margin-left: 0;
 }
 
 .contents h4 {
