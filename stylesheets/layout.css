@@ -471,7 +471,7 @@
 }
 .header .header-bottom .inner-menu ul {
     float: left;
-    width: 176px;
+    width: 200px;
     padding: 0;
 }
 .header .header-bottom .inner-menu ul:nth-child(n+2) {
@@ -488,7 +488,7 @@
 }
 .header .header-bottom .inner-menu ul > li a {
     display: inline-block;
-    width: 161px;
+    width: 185px;
     height: 100%;
     padding-left: 15px;
 }

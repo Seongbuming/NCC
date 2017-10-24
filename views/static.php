@@ -192,7 +192,7 @@
                     </ul>
                     <textarea>
                 </textarea>
-                <button class="submit">평가하기</button>
+                <button class="submit">평가<br class="show-for-mobile">하기</button>
                 </div>
             </div>
         </div>
