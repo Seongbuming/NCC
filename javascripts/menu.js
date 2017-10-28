@@ -1,24 +1,19 @@
 $(document).ready(function() {
     function resizeWholeMenu() {
-        if ($(document).width() < 1200) { // Mobile & Tablet
-            $(".header .whole-menu").each(function() {
-                $(this).find(".sub-menu").css("height", "");
+        // PC에서만 수행
+        if ($(document).width() < 1200)
+            return;
+                
+        var windowHeight = $(window).height();
+        var topSpace = $(".header .header-top").height();
 
-                if (this.style.height.length > 0)
-                    $(this).css("height", "");
-            });
-        } else { // PC
-            var windowHeight = $(window).height();
-            var topSpace = $(".header .header-top").height();
+        // 전체 메뉴 크기 설정
+        $(".header .whole-menu").height(windowHeight - topSpace - 1);
 
-            // 전체 메뉴 크기 설정
-            $(".header .whole-menu").height(windowHeight - topSpace - 1);
-
-            // 서브 메뉴 크기 설정
-            var maxSubMenuHeight = $(".header .whole-menu .container").get(0).scrollHeight;
-            if (maxSubMenuHeight > 0)
-                $(".header .whole-menu .sub-menu").height(maxSubMenuHeight);
-        }
+        // 서브 메뉴 크기 설정
+        var maxSubMenuHeight = $(".header .whole-menu .container").get(0).scrollHeight;
+        if (maxSubMenuHeight > 0)
+            $(".header .whole-menu .sub-menu").height(maxSubMenuHeight);  
     }
 
     function toggleWholeMenuSubMenu() {
